@@ -36,16 +36,16 @@ function App() {
     </>
   }
   return (
-    <>
+    <div className="flex flex-col min-h-screen bg-gradient-to-br from-gray-50 to-blue-100">
       <Header />
-      <main>
-       TODO: <Outlet />
+      <main className="flex-1 container mx-auto px-4 py-8">
+        <div className="bg-white rounded-xl shadow-lg p-6 md:p-10">
+          <Outlet />
+        </div>
       </main>
       <Footer />
-    </>
+    </div>
   )
-
-
 }
 
 export default App
