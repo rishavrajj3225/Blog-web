@@ -33,7 +33,7 @@ export class Service {
       console.error("Error creating post:", error);
     }
   }
-
+// slug is the unique identifier for the post that is id
   async updatePost(slug, { title, content, featureImage, status }) {
     try {
       return await this.databases.updateDocument(
